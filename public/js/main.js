@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	Parse.initialize("8UbLn5TLQJf4wjbU4hAQJjsw0KPktU1Sh4RrDoKf", "502XFoy8e2DmsUp1s1JcbWZG6SCck8DLtYkqrQzD");
+	
 	var pswpElement = document.querySelectorAll('.pswp')[0];
 
 	// build items array
