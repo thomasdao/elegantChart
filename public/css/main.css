@@ -95,21 +95,24 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   .btn-call-action {
+     width: 200px;
+     margin: 10px;
+   }
 
+   .social {
+     margin-left: 15px;
+     margin-right: 15px;
+     float: right;
+   }
 
+   a {
+     text-decoration: none !important;
+   }
 
-
-
-
-
-
-
-
-
-
-
-
-
+   .img-responsive {
+     box-shadow: 0 10px 10px -10px rgba(0,0,0,.5);
+   }
 
 /* ==========================================================================
    Helper classes

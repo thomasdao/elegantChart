@@ -1,20 +1,31 @@
 $(document).ready(function(){
-	Parse.initialize("8UbLn5TLQJf4wjbU4hAQJjsw0KPktU1Sh4RrDoKf", "502XFoy8e2DmsUp1s1JcbWZG6SCck8DLtYkqrQzD");
+	Parse.initialize("8UbLn5TLQJf4wjbU4hAQJjsw0KPktU1Sh4RrDoKf",
+	 "502XFoy8e2DmsUp1s1JcbWZG6SCck8DLtYkqrQzD");
+
 	var Subscriber = Parse.Object.extend("Subscriber");
 
 	// Allow subscribing to beta list
 	$('#join').click(function() {
-		console.log("Join click");
+		var email = $('#email').val();
+		if (!validator.isEmail(email)) {
+			$('#errorAlert').removeClass("hidden")
+			setTimeout(function() {
+				$('#errorAlert').addClass('hidden');
+			}, 3000);
+			return;
+		}
+
 		var subscriber = new Subscriber();
 		subscriber.set("name", $('#name').val());
 		subscriber.set("email", $('#email').val());
 		subscriber.save(null, {
 			success: function(subscriber) {
-				$('#signupForm').modal('hide');
+				$("#successAlert").removeClass("hidden");
+				$("#name").val("");
+				$("#email").val("");
 			},
 
 			error: function(subscriber, error) {
-				$('#signupForm').modal('hide');
 			}
 		});
 	});
