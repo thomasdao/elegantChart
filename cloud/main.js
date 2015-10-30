@@ -1,3 +1,4 @@
+require('cloud/app.js');
 var validator = require('cloud/libs/validator.min.js');
 
 
