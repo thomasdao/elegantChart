@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>http://www.elegantchart.com</loc>
+    <video:video>
+      <video:content_loc>
+        http://www.elegantchart.com/video/demo.mp4
+      </video:content_loc>
+      <video:thumbnail_loc>
+        http://www.elegantchart.com/video/demo_thumbnail.png
+      </video:thumbnail_loc>
+      <video:title>Elegant Chart - Create beautiful and professional charts in Excel in less than 1 minute!</video:title>
+      <video:description>
+        Simple 3 steps to create a beautiful chart: copy and paste your data, choose highlight colors and customize the final chart.
+      </video:description>
+      <video:duration>
+        40
+      </video:duration>
+    </video:video>
+  </url>
+
+  <url>
+    <loc>http://www.elegantchart.com/collection</loc>
+  </url>
+</urlset>
