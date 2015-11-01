@@ -7,8 +7,9 @@ Parse.Cloud.beforeSave("Subscriber", function(request, response) {
   var name = request.object.get("name");
   if (name && name.indexOf("http") != -1) {
   	response.error("Invalid name");
+  	return;
   }
-  
+
   if (email && validator.isEmail(email)) {
     response.success();
   } else {
